@@ -1,0 +1,42 @@
+.admin {
+  margin-right: 15px !important;
+}
+.admin a {
+  color: white !important;
+}
+.admin a:hover {
+  color: white !important;
+}
+.admin a:visited {
+  color: white !important;
+}
+
+.products {
+  padding: 20px !important;
+  min-height: 375px !important;
+}
+/*.cartsummary {
+  margin-right: 15px !important;
+  min-width: 150px !important;
+  margin-top: 5px !important;
+  height: 20px !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  fill: white !important;
+}*/
+
+.cartsummary a {
+  color: white !important;
+  fill: white !important;
+
+}
+.cartsummary a:hover {
+  color: white !important;
+  fill: white !important;
+
+}
+.cartsummary a:visited {
+  color: white !important;
+  fill: white !important;
+
+}

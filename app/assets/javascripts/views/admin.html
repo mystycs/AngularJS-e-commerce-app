@@ -1,0 +1,47 @@
+<div class="jumbotron text-center" >
+  <h2>Admin Panel</h2>
+  <div class="row">
+    <div class="thumbnail col-md-6" style="min-height: 300px;">
+
+      <form ng-submit="addProduct()">
+        <legend>Add a Product</legend>
+        <label>Name</label>
+        <input type="text" id="name" name="name" ng-model="product.name" maxlength="255">
+        <br>
+        <label>Brand</label>
+        <input type="text" id="brand" name="email" ng-model="product.brand" maxlength="255">
+        <br>
+        <label>Model</label>
+        <input type="text" id="model" name="model" ng-model="product.model" maxlength="255">
+        <br>
+        <label>Sku</label>
+        <input type="text" id="sku" name="sku" ng-model="product.sku" maxlength="255">
+        <br>
+        <label>Price</label>
+        <input type="text" id="price" name="price" ng-model="product.price" maxlength="8">
+        <br>
+        <label>Desc</label>
+        <input type="text" id="desc" name="desc" ng-model="product.desc" maxlength="1000">
+        <br>
+        <button class="btn btn-primary">Add Product</button>
+
+      </form>
+      <br>
+    </div>
+    <div class="thumbnail col-md-6" style="min-height: 300px;">
+      <legend>List Users</legend>
+      <button class="btn btn-primary" ng-click="listUsers()">List Users</button>
+      <br>
+      <li class="thumbnail col-md-4" ng-repeat="user in users" ng-show="user.id!='1'">
+        <h4>Username:</h4>
+        <h5>{{ user.username }}</h5>
+      </li>
+    </div>
+  </div>
+  <div class="thumbnail col-md-5 col-md-offset-4" style="min-height: 100px;">
+    <legend>Upload JSON</legend>
+    <input type="file" id="file" name="file" />
+    <button ng-click="uploadJSON()">Upload</button>
+  </div>
+  <div class="clearfix" </div>
+  </div>
